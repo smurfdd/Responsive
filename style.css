@@ -520,6 +520,12 @@ form .text::placeholder {
     .gallery img {
         width: 150px;
     }
+      form .text {
+        margin: 0;
+        border-radius: 0;
+        width: 150px;
+        padding: 4px 0;
+     }
 }
 
 
