@@ -343,14 +343,127 @@ form .text::placeholder {
     transform: translateX(0px);
     
 }
+@media (max-width:1920) {
 
-@media (max-width: 1200px) {
+    
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+
+    }
     .mar {
-        padding: 20px 100px;
+        padding: 20px 50px;
+    }
+    .logo {
+        letter-spacing: 5px;
+
     }
 
+    .header {
+        
+        padding: 20px 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        
+        justify-content: space-between;
+        background-color: #3b3d3a;
+        color: aliceblue;
+    }
+   
+    .nav-links {
+        display: none;
+    }
+    #menuBtn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 50px;
+        
+        z-index: 2;
+        cursor: pointer;
+    }
+    #sideNav {
+        display: block;
+        right: -250px;
+        width: 20vw;
+                
+    }
+    .flex {
+
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+        padding-bottom: 10px;
+        text-align: start;
+    }
+
+    .scroll2 {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .box:first-child {
+
+        padding: 20px 0px;
+        width: 500px;
+    }
+
+    .box:last-child {
+        width: 500px;
+
+    }
+
+    .more {
+       
+        margin-left: 175px;
+        width: 150px;
+        
+
+    }
+
+    .gall {
+        padding: 0 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        overflow-x: scroll;
+
+    }
+    .wapper1 {
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .box-2 {
+        width: 500px;
+        /*outline: 1px solid #000;*/
+
+    }
+
+    form{
+        padding-top: 0px;
+        
+        width: auto
+    }
+    form .more{
+        margin: 0;
+        
+    }
+
+   
+
     .footer-div {
-        padding: 20px 100px;
+        padding: 20px 50px;
         gap: 100px;
         background-color: #3b3d3a;
         min-height: 100px;
@@ -377,7 +490,9 @@ form .text::placeholder {
     .footer-col:last-child ul li {
         text-decoration: none;
     }
-
+    .footer-col:nth-child(2){
+        display: none;
+    }
     .footer-col:first-child {
 
         flex-basis: 370px;
@@ -412,7 +527,7 @@ form .text::placeholder {
 
 /*-------------mobile------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     html,
     body {
@@ -451,7 +566,7 @@ form .text::placeholder {
     #menuBtn {
         display: block;
         position: fixed;
-        top: 0px;
+        top: -10px;
         right: 20px;
         text-align: center;
         z-index: 2;
