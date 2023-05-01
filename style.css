@@ -433,7 +433,7 @@ form .text::placeholder {
         padding: 0 20px;
         display: flex;
         gap: 10px;
-        justify-content: start;
+        justify-content: center;
         overflow-x: scroll;
 
     }
@@ -520,12 +520,16 @@ form .text::placeholder {
     .gallery img {
         width: 150px;
     }
-      form .text {
+    form .text {
         margin: 0;
         border-radius: 0;
         width: 150px;
         padding: 4px 0;
-     }
+        
+        
+        
+
+    }
 }
 
 
